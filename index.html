@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HPLC-01 통합 관리</title>
-    <link rel="stylesheet" href="https://docs.google.com/spreadsheets/d/1yBn4ZcWg2-KEvX6VvPIAJ6rf8bn_kYtm/edit?gid=361739157#gid=361739157">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         body {
             font-family: 'Noto Sans KR', sans-serif;
@@ -15,7 +15,7 @@
         }
 
         .container {
-            max-width: 480px; /* 모바일 최적화 너비 */
+            max-width: 480px;
             margin: 0 auto;
             background-color: #fff;
             min-height: 100vh;
@@ -175,8 +175,9 @@
 
     <!-- 메인 기능 메뉴 -->
     <div class="menu-grid">
-        <!-- 1. 메뉴얼 링크 (클라우드 PDF 링크 연결) -->
-        <a href="#" class="menu-item" onclick="alert('실제 PDF 파일 링크로 연결됩니다.')">
+        
+        <!-- 1번 버튼: 기기 메뉴얼 -->
+        <a href="#" class="menu-item" target="_blank">
             <div class="menu-icon">
                 <i class="fa-solid fa-book-open"></i>
             </div>
@@ -184,17 +185,19 @@
             <span class="menu-desc">SOP & 작동법 PDF</span>
         </a>
 
-        <!-- 2. 점검표 링크 (클라우드 엑셀/구글 시트 연결) -->
-        <a href="https://docs.google.com/spreadsheets/d/1yBn4ZcWg2-KEvX6VvPIAJ6rf8bn_kYtm/edit?gid=361739157#gid=361739157" class="menu-item" onclick="alert('실제 구글 스프레드시트나 엑셀 파일로 연결됩니다.')">
+        <!-- ★ 2번 버튼: 유지보수 이력 (여기를 수정하세요!) ★ -->
+        <!-- onclick="..." 부분을 완전히 삭제했습니다. -->
+        <!-- href 안에 엑셀 주소(https://...)를 넣으면 바로 열립니다. -->
+        <a href="https://docs.google.com/spreadsheets/d/1yBn4ZcWg2-KEvX6VvPIAJ6rf8bn_kYtm/edit?rtpof=true&gid=361739157#gid=361739157" class="menu-item" target="_blank">
             <div class="menu-icon" style="background-color: #f0fdf4; color: #16a34a;">
                 <i class="fa-solid fa-clipboard-check"></i>
             </div>
             <span class="menu-title">유지보수 이력</span>
-            <span class="menu-desc">점검일지 작성/열람</span>
+            <span class="menu-desc">점검일지(Excel)</span>
         </a>
 
-        <!-- 3. 트러블슈팅 -->
-        <a href="#" class="menu-item" onclick="alert('트러블슈팅 가이드 페이지로 이동합니다.')">
+        <!-- 3번 버튼: 고장 해결 -->
+        <a href="#" class="menu-item" target="_blank">
             <div class="menu-icon" style="background-color: #fff7ed; color: #ea580c;">
                 <i class="fa-solid fa-screwdriver-wrench"></i>
             </div>
@@ -202,8 +205,8 @@
             <span class="menu-desc">에러코드 조회</span>
         </a>
 
-        <!-- 4. 소모품 리스트 -->
-        <a href="#" class="menu-item">
+        <!-- 4번 버튼: 소모품 정보 -->
+        <a href="#" class="menu-item" target="_blank">
             <div class="menu-icon" style="background-color: #f5f3ff; color: #7c3aed;">
                 <i class="fa-solid fa-box-open"></i>
             </div>
